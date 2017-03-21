@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32D8FC65D6A0DB90BF3A4788 /* Pods_Photogram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541178FA4CCD7E7A3E42AEB8 /* Pods_Photogram.framework */; };
 		833356F31E80D81B00E051C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833356F21E80D81B00E051C2 /* AppDelegate.swift */; };
 		833356F51E80D81B00E051C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833356F41E80D81B00E051C2 /* ViewController.swift */; };
 		833356F81E80D81B00E051C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833356F61E80D81B00E051C2 /* Main.storyboard */; };
 		833356FA1E80D81B00E051C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833356F91E80D81B00E051C2 /* Assets.xcassets */; };
 		833356FD1E80D81B00E051C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833356FB1E80D81B00E051C2 /* LaunchScreen.storyboard */; };
+		83AAC0F11E80DE890037F14D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC0F01E80DE890037F14D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541178FA4CCD7E7A3E42AEB8 /* Pods_Photogram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photogram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		578167814466211CB79A47A2 /* Pods-Photogram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photogram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photogram/Pods-Photogram.release.xcconfig"; sourceTree = "<group>"; };
 		833356EF1E80D81B00E051C2 /* Photogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833356F21E80D81B00E051C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		833356F41E80D81B00E051C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		833356F91E80D81B00E051C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		833356FC1E80D81B00E051C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		833356FE1E80D81B00E051C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83AAC0F01E80DE890037F14D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B3ABFC1F48F04FD84F06C961 /* Pods-Photogram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photogram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photogram/Pods-Photogram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D8FC65D6A0DB90BF3A4788 /* Pods_Photogram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F0228C73257CF2F7C2A98D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				541178FA4CCD7E7A3E42AEB8 /* Pods_Photogram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AEA4CA62E75017D1F456F4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3ABFC1F48F04FD84F06C961 /* Pods-Photogram.debug.xcconfig */,
+				578167814466211CB79A47A2 /* Pods-Photogram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		833356E61E80D81900E051C2 = {
 			isa = PBXGroup;
 			children = (
 				833356F11E80D81B00E051C2 /* Photogram */,
 				833356F01E80D81B00E051C2 /* Products */,
+				4AEA4CA62E75017D1F456F4D /* Pods */,
+				22F0228C73257CF2F7C2A98D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,23 @@
 		833356F11E80D81B00E051C2 /* Photogram */ = {
 			isa = PBXGroup;
 			children = (
+				83AAC0EF1E80DE750037F14D /* ViewControllers */,
 				833356F21E80D81B00E051C2 /* AppDelegate.swift */,
-				833356F41E80D81B00E051C2 /* ViewController.swift */,
 				833356F61E80D81B00E051C2 /* Main.storyboard */,
 				833356F91E80D81B00E051C2 /* Assets.xcassets */,
 				833356FB1E80D81B00E051C2 /* LaunchScreen.storyboard */,
 				833356FE1E80D81B00E051C2 /* Info.plist */,
 			);
 			path = Photogram;
+			sourceTree = "<group>";
+		};
+		83AAC0EF1E80DE750037F14D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				833356F41E80D81B00E051C2 /* ViewController.swift */,
+				83AAC0F01E80DE890037F14D /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 833357011E80D81B00E051C2 /* Build configuration list for PBXNativeTarget "Photogram" */;
 			buildPhases = (
+				E52552BE04FCCE9B0ADF9C66 /* [CP] Check Pods Manifest.lock */,
 				833356EB1E80D81900E051C2 /* Sources */,
 				833356EC1E80D81900E051C2 /* Frameworks */,
 				833356ED1E80D81900E051C2 /* Resources */,
+				B383AB7F3DD6A95E5CE41D40 /* [CP] Embed Pods Frameworks */,
+				3FBDC562CF4D9ADA3B957D04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +169,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FBDC562CF4D9ADA3B957D04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photogram/Pods-Photogram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B383AB7F3DD6A95E5CE41D40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photogram/Pods-Photogram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E52552BE04FCCE9B0ADF9C66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		833356EB1E80D81900E051C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AAC0F11E80DE890037F14D /* LoginViewController.swift in Sources */,
 				833356F51E80D81B00E051C2 /* ViewController.swift in Sources */,
 				833356F31E80D81B00E051C2 /* AppDelegate.swift in Sources */,
 			);
@@ -256,6 +343,7 @@
 		};
 		833357021E80D81B00E051C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3ABFC1F48F04FD84F06C961 /* Pods-Photogram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Photogram/Info.plist;
@@ -268,6 +356,7 @@
 		};
 		833357031E80D81B00E051C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 578167814466211CB79A47A2 /* Pods-Photogram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Photogram/Info.plist;
@@ -297,6 +386,7 @@
 				833357031E80D81B00E051C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
