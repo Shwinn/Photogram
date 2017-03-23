@@ -7,4 +7,5 @@ target 'Photogram' do
 
   # Pods for Photogram
   pod 'Parse'
+  pod 'ParseUI'
 end

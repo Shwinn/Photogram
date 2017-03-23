@@ -23,6 +23,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://intense-beach-99459.herokuapp.com/parse"
             })
         )
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if (PFUser.current() != nil) {
+            let homeViewController = storyboard.instantiateViewController(withIdentifier: "homeViewController")
+            homeViewController.tabBarItem.title = "Home"
+            
+            let captureViewController = storyboard.instantiateViewController(withIdentifier: "captureViewController")
+            captureViewController.tabBarItem.title = "Capture"
+            
+            let profileViewController = storyboard.instantiateViewController(withIdentifier: "profileViewController")
+            profileViewController.tabBarItem.title = "Profile"
+            
+            let tabBarController = UITabBarController()
+            tabBarController.viewControllers = [homeViewController, captureViewController, profileViewController]
+            
+            window?.rootViewController = tabBarController
+        }
+        else {
+            window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+        }
+        window?.makeKeyAndVisible()
+        
+        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "homeViewController")
+        homeViewController.tabBarItem.title = "Home"
+        //homeViewController.tabBarItem.image = UIImage(named: "nowPlayingImage")
+        
+        let captureViewController = storyboard.instantiateViewController(withIdentifier: "captureViewController")
+        captureViewController.tabBarItem.title = "Capture"
+        //captureViewController.tabBarItem.image = UIImage(named: "topRatedImage")
+        
+        let profileViewController = storyboard.instantiateViewController(withIdentifier: "profileViewController")
+        profileViewController.tabBarItem.title = "Capture"
+        
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [homeViewController, captureViewController, profileViewController]
+        
+        window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+        //window?.makeKeyAndVisible()
+        */
+        
         return true
     }
 
